@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGLife</title>
+    <link rel="stylesheet" href="PGLife.css">
+    <script src="https://kit.fontawesome.com/bb0e2180d4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="img/logo.png" alt="PGLife LOGO" class="navbarlogo">
+        <div class="buttons">
+            <button class="btn"><i class="fa-solid fa-right-to-bracket" style="margin-right: 5px;"></i>Login</button>
+            <span style="margin-right: 5px;">|</span>
+            <button class="btn"> <i class="fa-solid fa-user-plus" style="margin-right: 5px;"></i>Signup</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1> Happiness Per Square Foot</h1>
+        <div class="serach-container">
+            <input id="TextInput" type="text" placeholder="Enter your to serach for PGs" class="textField" style="border: none;" onchange="HandleChange()">
+            <button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <div class="container2">
+        <h1 class="headline">Major Cities</h1>
+        <div class="Citysection">
+            <a href="property_list.html"><img src="img/delhi.png" alt="" class="cityimg"></a>
+            <a href="property_list.html"> <img src="img/bangalore.png" alt="" class="cityimg"></a>
+            <a href="property_list.html"> <img src="img/hyderabad.png" alt="" class="cityimg"></a>
+            <a href="property_list.html"><img src="img/mumbai.png" alt="" class="cityimg"></a>
+        </div>
+
+        <script>
+            function HandleChange(){
+                var TextInput = document.getElementById('TextInput').value;
+                console.log(TextInput);
+            }
+        </script>
+</body>
+
+</html>
